@@ -1,0 +1,19 @@
+﻿<Window x:Class="CalculatorApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Калькулятор" Height="250" Width="300">
+    <StackPanel Margin="10">
+        <TextBlock Text="А:"/>
+        <TextBox x:Name="txtA"/>
+        <TextBlock Text="Б:"/>
+        <TextBox x:Name="txtB"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="+" Width="40" Margin="5" Click="OnOperationClick"/>
+            <Button Content="-" Width="40" Margin="5" Click="OnOperationClick"/>
+            <Button Content="*" Width="40" Margin="5" Click="OnOperationClick"/>
+            <Button Content="/" Width="40" Margin="5" Click="OnOperationClick"/>
+        </StackPanel>
+        <TextBlock Text="Результат:"/>
+        <TextBox x:Name="txtResult" IsReadOnly="True"/>
+    </StackPanel>
+</Window>
